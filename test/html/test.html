@@ -1,25 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eat-Da-Burger!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="/public/assets/css/style.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="/public/assets/js/burgers.js"></script>
+    </head>
+    <body>
         <nav class="navbar navbar-light justify-content-center bg-light">
             <span class="navbar-brand mb-0 h1"></span>Eat Dem Burgers!!</span>
         </nav>
         <main class="container my-5">
             <div class="row">
-
                 <div class="col-4 justify-content-center">
                     <div class="d-flex p2 mb-3 justify-content-center">
                         <h4>Ready to Eat!</h4>
                     </div>
                     <div class="d-flex justify-content-center">
                         <ul>
-                        {{#each burgers}}
-                            {{#unless devoured}}
-                                {{> burgers/burger-block devoured=true}}
-                                <button class="devour" data-id={{id}}></button>
-                            {{/unless}}
-                        {{/each}}
+                            <li>
+                                Classic Burger
+                            </li>
+                            <li>
+                                Bacon Burger
+                            </li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-4 justify-content-center">
                     <div class="d-flex my-3 p2 justify-content-center">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ2NC91fqf8FB8a0av62raKT_u3x_vi3eIgGw&usqp=CAU" 
@@ -36,21 +48,23 @@
                         </form>
                     </div>
                 </div>
-
                 <div class="col-4">
                     <div class="d-flex p2 mb-3 justify-content-center">
                         <h4>Burger's I've Eaten...</h4>
                     </div>
                     <div class="d-flex justify-content-center">
                         <ul>
-                        {{#each burgers}}
-                            {{#unless devoured}}
-                                {{> burgers/burger-block devoured=false}}
-                            {{/unless}}
-                        {{/each}}
-                    </ul>
+                            <li>
+                                Quarter-Pounder
+                            </li>
+                            <li>
+                                BBQ Burger
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                
+                </div>
             </div>
         </main>
+    </body>
+</html>
