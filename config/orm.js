@@ -9,6 +9,8 @@ const orm = {
 
     },
     updateOne: function() {
-        
+
     }
 }
+
+module.exports = orm
