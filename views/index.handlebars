@@ -13,7 +13,7 @@
                         {{#each burgers}}
                             {{#unless devoured}}
                                 {{> burgers/burger-block devoured=true}}
-                                <button class="devour" data-id={{id}}></button>
+                                <button class="devour" data-id={{id}}>Devour</button>
                             {{/unless}}
                         {{/each}}
                         </ul>
@@ -44,9 +44,9 @@
                     <div class="d-flex justify-content-center">
                         <ul>
                         {{#each burgers}}
-                            {{#unless devoured}}
+                            {{#if devoured}}
                                 {{> burgers/burger-block devoured=false}}
-                            {{/unless}}
+                            {{/if}}
                         {{/each}}
                     </ul>
                     </div>
