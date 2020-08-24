@@ -10,8 +10,13 @@ const orm = {
             cb(result)
         })
     },
-    insertOne: function() {
-
+    insertOne: function(table, col, val, cb) {
+        const queryString = "INSERT INTO ?? (??) VALUES (?)"
+        connection.query(queryString, [table, col, val], function(err, result) {
+            if (err) throw err
+            console.log("ORM insertOne ", result)
+            cb(result)
+        })
     },
     updateOne: function() {
 
