@@ -3,20 +3,29 @@ const router = express.Router()
 const burger = require("../models/burger")
 
 router.get("/", function(req, res) {
-    console.log("controller GET")
     burger.selectAll(function(data) {
         const hbsObject = {
             burgers: data
         }
-        console.log("Handlebars Object ", hbsObject)
         res.render("index", hbsObject)
     })
 })
 
 router.post("/api/burgers", function(req, res) {
     burger.insertOne(["burger_name"], [req.body.name], function(result) {
-        console.log({ id: result.insertId})
         res.json({ id: result.insertId })
+    })
+})
+
+router.put("/api/burgers/:id", function(req, res) {
+    const eaten = (req.body.devoured == "true")
+    burger.updateOne("devoured", eaten, "id", req.params.id, function(result) {
+        if (result.changedRows == 0) {
+            return res.status(404).end()
+        }
+        else {
+            res.status(200).end()
+        }
     })
 })
 

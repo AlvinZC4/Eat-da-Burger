@@ -6,7 +6,6 @@ const orm = {
         const queryString = "SELECT * FROM ??"
         connection.query(queryString, [table], function(err, result) {
             if (err) throw err
-            console.log("ORM SelectAll ", result)
             cb(result)
         })
     },
@@ -14,12 +13,16 @@ const orm = {
         const queryString = "INSERT INTO ?? (??) VALUES (?)"
         connection.query(queryString, [table, col, val], function(err, result) {
             if (err) throw err
-            console.log("ORM insertOne ", result)
             cb(result)
         })
     },
-    updateOne: function() {
-
+    updateOne: function(table, col1, val1, col2, val2, cb) {
+        const queryString = "UPDATE ?? SET ?? = ? WHERE ?? = ?"
+        connection.query(queryString, [table, col1, val1, col2, val2], function(err, result) {
+            if (err) throw err
+            console.log("ORM updateOne ", result)
+            cb(result)
+        })
     }
 }
 
