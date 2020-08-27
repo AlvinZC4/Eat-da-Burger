@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://wallpaperaccess.com/full/1116542.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    background-color: orangered;
+    color: midnightblue
+}
+
+h4 {
+    color: red;
+}
+
+li {
+    color: whitesmoke;
+}
+
+img {
+    border-style: solid;
+    border-color: orangered;
+    border-width: 5px;
+}
+
+.buildit, label {
+    color: whitesmoke
+}
