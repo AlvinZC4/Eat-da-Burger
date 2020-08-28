@@ -1,1 +1,51 @@
-# Eat-da-Burger
+# Eat-Da-Burger
+
+  This application allows the user to "create" and then "devour" hamburgers.
+
+  ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
+
+  ***
+
+  ## Table of Contents:
+
+  1. [How to Install Eat-Da-Burger](#Installation)
+  2. [Using Eat-Da-Burger](#How%20To%20Use%20This%20Application)
+  3. [Testing Eat-Da-Burger](#Test%20Code)
+  4. [Contribution Guidlines](#Contribution%20Guidelines)
+  5. [Ask Us Questions](#Ask%20Questions)
+  6. [Licenses](#License)
+
+  ***
+
+  ## Installation
+
+  Clone the Eat-Da-Burger repository from the app's creator's Github (given below). Then navigate your CLI to the root directory of the applicatoin and run npm install to install all of the necessary dependencies.
+
+  ## How to Use This Application
+
+  The user can create a burger by giving it a name of their choosing. 
+  
+  Once the burger has been created it will appear in the "Ready to Eat" column along with a button that will allow the user to devour the burger.
+  
+  When the user devours the burger it will move from the "Ready to Eat" column to the "Burgers I've Eaten..." column.  The user can create as many burgers as they desire.
+
+  ![Eat-da-Burger](./public/assets/images/Eat-Da-Burger!.png)
+
+  ## Test Code
+
+  No test were used in the creation of this application
+
+  ## Contribution Guidelines
+
+  Please check your codes for errors and make sure your code is clean and easily read before making a merge request.
+
+  ## Ask Questions
+
+  Visit my GitHub Page: [My GitHub Profile Page](https://github.com/AlvinZC4)
+ -OR-
+ Drop me an e-mail at: alvinzcoxiv@gmail.com
+
+  ## License
+
+  This applicaton is covered under the Public Domain (Unlicense)
+
