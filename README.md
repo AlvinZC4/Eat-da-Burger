@@ -19,7 +19,7 @@
 
   ## Installation
 
-  Clone the Eat-Da-Burger repository from the app's creator's Github (given below). Then navigate your CLI to the root directory of the applicatoin and run npm install to install all of the necessary dependencies.
+  Navigate your browser to: https://shrouded-journey-36823.herokuapp.com/
 
   ## How to Use This Application
 
