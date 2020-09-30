@@ -1,6 +1,6 @@
 # Eat-Da-Burger
 
-  This application allows the user to "create" and then "devour" hamburgers.
+  This application allows the user to "create" and then "devour" hamburgers by adding querying a mySQL database.
 
   ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)
 
