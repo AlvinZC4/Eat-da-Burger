@@ -23,7 +23,7 @@
 
   ## How to Use This Application
 
-  The user can create a burger by giving it a name of their choosing and clicking the "Build It!" button.
+  The user can create a burger by giving it a name of their choosing and clicking the "Build It!" button. By clicking the the "Build It!" button the burger will be added to the database.
   
   Once the burger has been created it will appear in the "Ready to Eat" column along with a button that will allow the user to devour the burger.
   
