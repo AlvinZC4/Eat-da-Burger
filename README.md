@@ -19,7 +19,7 @@
 
   ## Installation
 
-  Navigate your browser to: https://shrouded-journey-36823.herokuapp.com/
+  Navigate your browser to: <https://shrouded-journey-36823.herokuapp.com/>
 
   ## How to Use This Application
 
