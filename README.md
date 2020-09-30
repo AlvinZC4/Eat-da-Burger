@@ -27,7 +27,7 @@
   
   Once the burger has been created it will appear in the "Ready to Eat" column along with a button that will allow the user to devour the burger.
   
-  When the user devours the burger it will move from the "Ready to Eat" column to the "Burgers I've Eaten..." column.  The user can create as many burgers as they desire.
+  When the user devours the burger it will move from the "Ready to Eat" column to the "Burgers I've Eaten..." column. This is accomplished by querying the database and changing the "devoured" property of the burger from false to true.  The user can create as many burgers as they desire.
 
   ![Eat-da-Burger](./public/assets/images/Eat-Da-Burger!.png)
 
